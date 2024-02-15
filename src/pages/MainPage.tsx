@@ -1,6 +1,5 @@
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 import './mainpage.css'
-import axios from 'axios'
 import { Link } from 'react-router-dom';
 
 export const MainPage = ({data, originalData, setData}: any) => {
