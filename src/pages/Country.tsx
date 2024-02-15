@@ -50,7 +50,7 @@ export default function Country({ data }: any) {
         <h1>Languages: {lela?.languages[0].name}</h1>
       </div>
 
-      <h1 className="mamaflex">Border Countries:</h1>
+      <h1 className="mamaflex">Border Countris:</h1>
 
       <div className="buttons">
         <button className="borders ha">{lela?.borders[0]}</button>
