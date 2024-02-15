@@ -36,6 +36,12 @@ h1{
     margin-top: 15px;
 }
 
+.img{
+    width: 319.837px;
+    height: 275.924px;
+    flex-shrink: 0;
+}
+
 .qvemot{
     margin-top: 16px;
     margin-bottom: 32px;
@@ -67,4 +73,60 @@ h1{
 }
 .dedaflex{
     padding-left: 24px;
+}
+
+@media (width >= 1440px){
+    .simon{
+        width: 136px;
+        height: 40px;
+        flex-shrink: 0;
+        border-radius: 6px;
+        background: #FFF;
+        box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.29);
+        margin-top: 80px;
+        background-image: url('./call-made.svg');
+        background-repeat: no-repeat;
+        background-position: 10% 50%;
+    }
+    .mtliani{
+        display: flex;
+    }
+    .img{
+        width: 559.715px;
+        height: 483.169px;
+        flex-shrink: 0;
+    }
+    .qvemot2{
+        margin-top: 28px;
+    }
+    .resp1{
+        display: flex;
+        margin-top: 39px;
+        gap: 141px;
+    }
+    .baro{
+        color: #111517;
+        font-family: "Nunito Sans";
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: normal;
+        margin-top: 0;
+    }
+    h1{
+        color: #111517;
+        font-family: "Nunito Sans";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 32px; /* 200% */
+    }
+    .borderrrr{
+        display: flex;
+        margin-top: 70px;
+        gap: 10px;
+    }
+    .mamaflex{
+        margin: 0;
+    }
 }

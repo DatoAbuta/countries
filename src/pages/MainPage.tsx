@@ -19,6 +19,7 @@ export const MainPage = ({data, originalData, setData}: any) => {
   return (
 
     <div>
+      <div className="saerto">
     <div className='smn'>
     <input 
       onChange={handleFilter} 
@@ -44,8 +45,9 @@ export const MainPage = ({data, originalData, setData}: any) => {
         <h1 onClick={() => handleRegion('Europe')} className='list'>Europe</h1>
         <h1 onClick={() => handleRegion('Oceania')} className='list'>Oceania</h1>
       </div>
-    ) : null}
-
+    ) : null}</div>
+    </div>
+    <div className="menuu">
     {data.map((el: any) => (
     <Link to={`/${el.alpha3Code}`} key={el.name}>
       <div className='cards'>
@@ -58,8 +60,8 @@ export const MainPage = ({data, originalData, setData}: any) => {
         </div>
       </div>
     </Link>
-    ))}
-  </div>
+    ))}</div>
+  
   
   </div>
   )

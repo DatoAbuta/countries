@@ -34,3 +34,26 @@ h4{
     gap: 8px;
     cursor: pointer;
 }
+
+
+@media (width >= 1440px){
+    header{
+        gap: 941px;
+    }
+    h1{
+        color: #111517;
+        font-family: "Nunito Sans";
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: normal;
+    }
+    h4{
+        color: #111517;
+        font-family: "Nunito Sans";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+    }
+}

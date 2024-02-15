@@ -29,11 +29,14 @@ export default function Country({ data }: any) {
       >
         Back
       </button>
+      <div className="mtliani">
       <div className="shmadi">
-        <img src={lela?.flags.png} alt="" />
+        <img className="img" src={lela?.flags.svg} alt="" />
       </div>
 
       <div className="dedaflex">
+        <div className="resp1">
+        <div className="resp">
         
       <h1 className="baro">{lela?.name}</h1>
 
@@ -43,19 +46,20 @@ export default function Country({ data }: any) {
         <h1>Region: {lela?.region}</h1>
         <h1>Sub Region: {lela?.subregion}</h1>
         <h1>Capital: {lela?.capital}</h1>
-      </div>
+      </div></div>
       <div className="qvemot2">
         <h1>Top Level Domain: {lela?.topLevelDomain}</h1>
         <h1>Currencies: {lela?.currencies[0].name}</h1>
         <h1>Languages: {lela?.languages[0].name}</h1>
-      </div>
-
-      <h1 className="mamaflex">Border Countris:</h1>
+      </div></div>
+        <div className="borderrrr">
+      <h1 className="mamaflex">Border Countries:</h1>
 
       <div className="buttons">
         <button className="borders ha">{lela?.borders[0]}</button>
         <button className="borders ha">{lela?.borders[1]}</button>
-        <button className="borders">{lela?.borders[2]}</button>
+        <button className="borders">{lela?.borders[2]}</button></div>
+      </div>
       </div>
 
       </div>
