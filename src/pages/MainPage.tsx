@@ -1,8 +1,8 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import './mainpage.css'
 import { Link } from 'react-router-dom';
 
-export const MainPage = ({data, originalData, setData}: any) => {
+export const MainPage = ({data, originalData, setData, setRefresh}: any) => {
 
     const [opened, setOpened] = useState(false);
   
@@ -16,6 +16,14 @@ export const MainPage = ({data, originalData, setData}: any) => {
       setData(filteredRegion);
       setOpened(false);
     };
+
+    useEffect(() => {
+
+      setData(data)
+
+    }, [])
+
+    console.log(data)
   return (
 
     <div>
@@ -49,7 +57,7 @@ export const MainPage = ({data, originalData, setData}: any) => {
     </div>
     <div className="menuu">
     {data.map((el: any) => (
-    <Link to={`/${el.alpha3Code}`} key={el.name}>
+    <Link to={`/${el.alpha3Code}`} key={el.name} onClick={() => setRefresh((prev:boolean) => !prev)}>
       <div className='cards'>
         <img src={el.flags.png} alt="" />
         <div className='bottom'>
