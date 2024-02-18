@@ -31,7 +31,7 @@ export default function Country({ data, setRefresh }: any) {
       </button>
       <div className="mtliani">
       <div className="shmadi">
-        <img className="img" src={lela?.flags.svg ? lela?.flags.svg : null} alt="" />
+        <img className="img" src={lela?.flags.svg ? lela?.flags.svg : ""} alt="" />
       </div>
 
       <div className="dedaflex">
