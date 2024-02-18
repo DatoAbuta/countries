@@ -31,7 +31,7 @@ export default function Country({ data, setRefresh }: any) {
       </button>
       <div className="mtliani">
       <div className="shmadi">
-        <img className="img" src={lela?.flags?.svg ? lela?.flags?.svg : ""} alt="" />
+        <img className="img" src={lela?.flags.svg ? lela?.flags.svg : `Not Found`} alt="" />
       </div>
 
       <div className="dedaflex">
@@ -49,8 +49,8 @@ export default function Country({ data, setRefresh }: any) {
       </div></div>
       <div className="qvemot2">
         <h1>Top Level Domain: {lela?.topLevelDomain ? lela?.topLevelDomain : `Not Found`}</h1>
-        <h1>Currencies: {lela?.currencies[0]?.name ? lela?.currencies[0]?.name : `Not Found`}</h1>
-        <h1>Languages: {lela?.languages[0]?.name ? lela?.languages[0]?.name : `Not Found`}</h1>
+        <h1>Currencies: {lela?.currencies ? lela?.currencies[0]?.name : `Not Found`}</h1>
+        <h1>Languages: {lela?.languages[0]?.name ? lela?.languages[0].name : `Not Found`}</h1>
       </div>
       
       </div>
